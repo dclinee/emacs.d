@@ -364,7 +364,7 @@ typical word processor."
    'org-babel-load-languages
    (seq-filter
     (lambda (pair)
-      (locate-library (concat "ob-" (symbol-name (car pair)))))
+      (featurep (intern (concat "ob-" (symbol-name (car pair))))))
     '((R . t)
       (ditaa . t)
       (dot . t)
@@ -381,9 +381,14 @@ typical word processor."
       (screen . nil)
       (sh . t) ;; obsolete
       (shell . t)
+      (C . t)
       (sql . t)
       (sqlite . t)))))
-
+(require 'ob-C)
+(require 'ob-shell)
+(require 'python)
+(require 'ob-mermaid)
+(setq ob-mermaid-cli-path "/opt/homebrew/bin/mmdc")
 
 (provide 'init-org)
 ;;; init-org.el ends here

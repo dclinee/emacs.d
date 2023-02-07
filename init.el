@@ -150,9 +150,11 @@
   (add-hook 'after-init-hook 'global-eldoc-mode))
 
 (require 'init-direnv)
+(require 'init-dictionary)
+(require 'init-company-tabnine)
+(require 'init-avy)
 
 
-
 ;; Allow access from emacsclient
 (add-hook 'after-init-hook
           (lambda ()
@@ -169,6 +171,8 @@
 
 ;; Allow users to provide an optional "init-local" containing personal settings
 (require 'init-local nil t)
+;; Set emacs C source code directory from customize
+(setq find-function-C-source-directory "~/Desktop/emacs/src/")
 
 (provide 'init)
 
