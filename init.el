@@ -151,7 +151,6 @@
 
 (require 'init-direnv)
 (require 'init-dictionary)
-(require 'init-company-tabnine)
 (require 'init-avy)
 
 
