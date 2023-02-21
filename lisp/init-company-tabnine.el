@@ -11,5 +11,6 @@
 ;; Number the candidates (use M-1, M-2 etc to select completions).
 (setq company-show-numbers t)
 
+
 (provide 'init-company-tabnine)
 ;;; init-company-tabnine.el ends here
