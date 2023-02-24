@@ -152,7 +152,6 @@
 (require 'init-direnv)
 (require 'init-dictionary)
 (require 'init-avy)
-(require 'init-desktop-environment)
 
 
 ;; Allow access from emacsclient
