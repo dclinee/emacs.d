@@ -1,7 +1,7 @@
 ;;; init-avy.el --- Support for the avy package -*- lexical-binding: t -*-
 ;;; Commentary:
 ;;; Code:
-
+(global-set-key (kbd "M-g ;") 'avy-goto-char-timer)
 (global-set-key (kbd "M-s") 'avy-goto-char)
 (global-set-key (kbd "M-C") 'avy-goto-char-2)
 (global-set-key (kbd "M-g w") 'avy-goto-word-1)
