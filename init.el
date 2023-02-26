@@ -152,7 +152,7 @@
 (require 'init-direnv)
 (require 'init-dictionary)
 (require 'init-avy)
-
+(require 'org-tree-slide)
 
 ;; Allow access from emacsclient
 (add-hook 'after-init-hook
