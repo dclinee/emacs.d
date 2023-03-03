@@ -153,6 +153,7 @@
 (require 'init-dictionary)
 (require 'init-avy)
 (require 'org-tree-slide)
+(require 'init-helpful)
 
 ;; Allow access from emacsclient
 (add-hook 'after-init-hook
