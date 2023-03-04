@@ -24,5 +24,5 @@
 (setq counsel-describe-function-function #'helpful-callable)
 (setq counsel-describe-variable-function #'helpful-variable)
 
-(provide 'helpful)
+(provide 'init-helpful)
 ;;; init-helpful.el ends here
