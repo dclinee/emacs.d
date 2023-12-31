@@ -154,6 +154,7 @@
 (require 'init-avy)
 (require 'org-tree-slide)
 (require 'init-helpful)
+(require 'company-tabnine)
 
 ;; Allow access from emacsclient
 (add-hook 'after-init-hook
@@ -175,7 +176,12 @@
 (setq find-function-C-source-directory "~/Desktop/emacs/src/")
 ;; Company-mode in all the buffers
 (add-hook 'after-init-hook 'global-company-mode)
-
+;; Company-tabnine
+(add-to-list 'company-backends #'company-tabnine)
+;;Trigger completion immediately
+(setq company-idle-delay 0)
+;; Number the candidates
+(setq company-show-numbers t)
 (provide 'init)
 
 ;; Local Variables:
