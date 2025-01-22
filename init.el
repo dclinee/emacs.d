@@ -182,6 +182,13 @@
 (setq company-idle-delay 0)
 ;; Number the candidates
 (setq company-show-numbers t)
+;;eaf-config
+;;(add-to-list 'load-path "~/.emacs.d/site-lisp/emacs-application-framework/")
+;;(require 'eaf)
+;;(require 'eaf-browser)
+;;(require 'eaf-pdf-viewer)
+
+
 (provide 'init)
 
 ;; Local Variables:
@@ -189,3 +196,6 @@
 ;; no-byte-compile: t
 ;; End:
 ;;; init.el ends here
+
+
+
