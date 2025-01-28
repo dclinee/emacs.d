@@ -37,7 +37,7 @@
 (setq custom-file (locate-user-emacs-file "custom.el"))
 (require 'init-utils)
 (require 'init-site-lisp) ;; Must come before elpa, as it may provide package.el
-;; Calls (package-initialize)
+;;(package-initialize)
 (require 'init-elpa)      ;; Machinery for installing required packages
 (require 'init-exec-path) ;; Set up $PATH
 
@@ -155,6 +155,8 @@
 (require 'org-tree-slide)
 (require 'init-helpful)
 (require 'company-tabnine)
+(require 'helm)
+(require 'init-helm)
 
 ;; Allow access from emacsclient
 (add-hook 'after-init-hook
@@ -182,11 +184,7 @@
 (setq company-idle-delay 0)
 ;; Number the candidates
 (setq company-show-numbers t)
-;;eaf-config
-;;(add-to-list 'load-path "~/.emacs.d/site-lisp/emacs-application-framework/")
-;;(require 'eaf)
-;;(require 'eaf-browser)
-;;(require 'eaf-pdf-viewer)
+
 
 
 (provide 'init)
