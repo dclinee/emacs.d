@@ -175,7 +175,7 @@
 ;; Allow users to provide an optional "init-local" containing personal settings
 (require 'init-local nil t)
 ;; Set emacs C source code directory from customize
-(setq find-function-C-source-directory "~/Desktop/emacs/src/")
+(setq find-function-C-source-directory "~/emacs/src/")
 ;; Company-mode in all the buffers
 (add-hook 'after-init-hook 'global-company-mode)
 ;; Company-tabnine
