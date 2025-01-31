@@ -182,6 +182,8 @@
 (setq company-idle-delay 0)
 ;; Number the candidates
 (setq company-show-numbers t)
+;; Config org-babel-python-command
+(setq org-babel-python-command "python3")
 (provide 'init)
 
 ;; Local Variables:
