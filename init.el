@@ -37,7 +37,7 @@
 (setq custom-file (locate-user-emacs-file "custom.el"))
 (require 'init-utils)
 (require 'init-site-lisp) ;; Must come before elpa, as it may provide package.el
-;; Calls (package-initialize)
+;;(package-initialize)
 (require 'init-elpa)      ;; Machinery for installing required packages
 (require 'init-exec-path) ;; Set up $PATH
 
@@ -155,6 +155,8 @@
 (require 'org-tree-slide)
 (require 'init-helpful)
 (require 'company-tabnine)
+(require 'helm)
+(require 'init-helm)
 
 ;; Allow access from emacsclient
 (add-hook 'after-init-hook
@@ -173,7 +175,7 @@
 ;; Allow users to provide an optional "init-local" containing personal settings
 (require 'init-local nil t)
 ;; Set emacs C source code directory from customize
-(setq find-function-C-source-directory "~/Desktop/emacs/src/")
+(setq find-function-C-source-directory "~/emacs/src/")
 ;; Company-mode in all the buffers
 (add-hook 'after-init-hook 'global-company-mode)
 ;; Company-tabnine
@@ -182,8 +184,14 @@
 (setq company-idle-delay 0)
 ;; Number the candidates
 (setq company-show-numbers t)
+<<<<<<< HEAD
 ;; Config org-babel-python-command
 (setq org-babel-python-command "python3")
+=======
+
+
+
+>>>>>>> origin/master
 (provide 'init)
 
 ;; Local Variables:
@@ -191,3 +199,6 @@
 ;; no-byte-compile: t
 ;; End:
 ;;; init.el ends here
+
+
+
