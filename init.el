@@ -187,11 +187,7 @@
 <<<<<<< HEAD
 ;; Config org-babel-python-command
 (setq org-babel-python-command "python3")
-=======
 
-
-
->>>>>>> origin/master
 (provide 'init)
 
 ;; Local Variables:
@@ -199,6 +195,3 @@
 ;; no-byte-compile: t
 ;; End:
 ;;; init.el ends here
-
-
-
