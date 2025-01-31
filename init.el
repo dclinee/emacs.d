@@ -155,7 +155,6 @@
 (require 'org-tree-slide)
 (require 'init-helpful)
 (require 'company-tabnine)
-(require 'helm)
 (require 'init-helm)
 
 ;; Allow access from emacsclient
