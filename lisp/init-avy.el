@@ -4,6 +4,10 @@
 
 
 (require 'avy)
+;;
+(avy-setup-default)
+(global-set-key (kbd "C-c C-j") #'avy-resume)
+;;
 
 
 (global-set-key (kbd "M-g ;") #'avy-goto-char-timer)

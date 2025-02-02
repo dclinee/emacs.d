@@ -157,6 +157,7 @@
 (require 'company-tabnine)
 (require 'helm)
 (require 'init-helm)
+(require 'helpful)
 
 ;; Allow access from emacsclient
 (add-hook 'after-init-hook
