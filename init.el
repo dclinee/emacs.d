@@ -155,7 +155,6 @@
 (require 'org-tree-slide)
 (require 'init-helpful)
 (require 'company-tabnine)
-(require 'helm)
 (require 'init-helm)
 (require 'helpful)
 
@@ -185,8 +184,9 @@
 (setq company-idle-delay 0)
 ;; Number the candidates
 (setq company-show-numbers t)
-
-
+<<<<<<< HEAD
+;; Config org-babel-python-command
+(setq org-babel-python-command "python3")
 
 (provide 'init)
 
@@ -195,6 +195,3 @@
 ;; no-byte-compile: t
 ;; End:
 ;;; init.el ends here
-
-
-

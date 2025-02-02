@@ -386,7 +386,7 @@ typical word processor."
       (sqlite . t)))))
 (require 'ob-C)
 (require 'ob-shell)
-(require 'python)
+(require 'ob-python)
 (require 'ob-mermaid)
 (setq ob-mermaid-cli-path "/opt/homebrew/bin/mmdc")
 
