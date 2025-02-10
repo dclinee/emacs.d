@@ -22,6 +22,7 @@
 
 ;;; Code:
 
+(use-package org-tree-slide :ensure t)
 (when *is-a-mac*
   (maybe-require-package 'grab-mac-link))
 

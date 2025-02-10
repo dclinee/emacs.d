@@ -127,10 +127,8 @@
 
 (require 'init-folding)
 (require 'init-dash)
-
-;;(require 'init-twitter)
-;; (require 'init-mu)
 (require 'init-ledger)
+
 ;; Extra packages which don't require any configuration
 
 (require-package 'sudo-edit)
@@ -152,11 +150,9 @@
 (require 'init-direnv)
 (require 'init-dictionary)
 (require 'init-avy)
-(require 'org-tree-slide)
 (require 'init-helpful)
-(require 'company-tabnine)
 (require 'init-helm)
-(require 'helpful)
+(require 'init-tabnine)
 
 ;; Allow access from emacsclient
 (add-hook 'after-init-hook
@@ -178,12 +174,6 @@
 (setq find-function-C-source-directory "~/emacs/src/")
 ;; Company-mode in all the buffers
 (add-hook 'after-init-hook 'global-company-mode)
-;; Company-tabnine
-(add-to-list 'company-backends #'company-tabnine)
-;;Trigger completion immediately
-(setq company-idle-delay 0)
-;; Number the candidates
-(setq company-show-numbers t)
 
 ;; Config org-babel-python-command
 (setq org-babel-python-command "python3")

@@ -2,32 +2,27 @@
 ;;; Commentary:
 ;;; Code:
 
-;;(require 'avy)
 (use-package avy
   :ensure t
-  :bind (("M-g l" . avy-copy-line)
-         ("M-g r" . avy-copy-region)
-         ("M-g w" . avy-goto-0)
-         ("M-g e" . avy-goto-1)
-         ("M-g g" . avy-goto-line)
-         ("M-g ;" . avy-goto-char-timer)
-         ("C-:" . avy-goto-char)
-         ("M-g v" . avy-goto-char-2)
-         ("C-c C-j" . avy-resume)
-         )
+  :bind
+  (; Commonly used shortcuts keys in avy mode
+   ("C-;" . avy-goto-char-timer)         ;Goto a char
+   ("C-'" . avy-goto-word-1)             ;Goto first char of one word
+   ("M-g e" . avy-goto-word-0)           ;Goto x char of one word
+   ("M-g t" . avy-goto-char-in-line)     ;Goto a char in current line
+   ("M-g f" . avy-goto-line)             ;Goto one line
+   ("M-g l" . avy-copy-line)             ;Copy whole line
+   ("M-g m" . avy-move-line)             ;Move whole line
+   ("M-g d" . avy-kill-whole-line)       ;Kill whole line
+   ("M-g k" . avy-kill-ring-save-whole-line) ;copy whole line to kill-ring
+   ("M-g y" . avy-copy-region)           ;Copy region
+   ("M-g r" . avy-move-region)           ;Move region
+   ("C-c C-j" . avy-resume))             ;Last avy command
   :config
-  (avy-setup-default))
-
-;;(global-set-key (kbd "C-c C-j") #'avy-resume)
-
-;;(global-set-key (kbd "M-g ;") #'avy-goto-char-timer)
-;;(global-set-key (kbd "C-:") #'avy-goto-char)
-;;(global-set-key (kbd "M-g v") #'avy-goto-char-2)
-;;(global-set-key (kbd "M-g w") #'avy-goto-word-1)
-;;(global-set-key (kbd "M-g e") #'avy-goto-word-0)
-;;(global-set-key (kbd "M-g g") #'avy-goto-line)
-;;(global-set-key (kbd "M-g l") #'avy-copy-line)
-;;(global-set-key (kbd "M-g r") #'avy-copy-region)
+  ;; Basic configuration
+  (setq avy-background t)
+  ;; Actions of avy
+  )
 
 ;;;Jumping to conditionals in Elisp
 (defun avy-goto-conditional ()
