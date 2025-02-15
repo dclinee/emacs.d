@@ -148,7 +148,6 @@
   (add-hook 'after-init-hook 'global-eldoc-mode))
 
 (require 'init-direnv)
-(require 'init-dictionary)
 (require 'init-avy)
 (require 'init-helpful)
 (require 'init-helm)
