@@ -4,7 +4,7 @@
 
 (require 'package)
 (require 'cl-lib)
-
+(eval-when-compile (require 'use-package))
 
 ;;; Install into separate package dirs for each Emacs version, to prevent bytecode incompatibility
 (setq package-user-dir
