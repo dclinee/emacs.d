@@ -14,13 +14,10 @@
 
 
 ;;; Standard package repositories
-
-(add-to-list 'package-archives  '("melpa"  . "https://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/") t)
-
-;; Official MELPA Mirror, in case necessary.
-;;(add-to-list 'package-archives (cons "melpa-mirror" (concat proto "://www.mirrorservice.org/sites/melpa.org/packages/")) t)
-
-;;(package-initialize) ;; You might already have this line
+(setq package-archives
+      '(("melpaf" . "https://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/")
+        ("gnuf" . "https://mirrors.tuna.tsing.edu.cn/elpa/gnu/")
+        ("nongnu" . "https://mirrors.tuna.tsing.edu.cn/elpa/nongnu/")))
 
 
 ;; Work-around for https://debbugs.gnu.org/cgi/bugreport.cgi?bug=34341

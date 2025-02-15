@@ -44,7 +44,7 @@
 
 ;; Allow users to provide an optional "init-preload-local.el"
 (require 'init-preload-local nil t)
-
+(setq use-package-always-defer t)
 ;; Load configs for specific features and modes
 (require-package 'diminish)
 (maybe-require-package 'scratch)
