@@ -23,6 +23,7 @@
 ;;; Code:
 
 (use-package org-tree-slide :ensure t)
+(use-package ob-mermaid :ensure t)
 (when *is-a-mac*
   (maybe-require-package 'grab-mac-link))
 
