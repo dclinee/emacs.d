@@ -4,6 +4,7 @@
 
 (use-package avy
   :ensure t
+  :defer t
   :bind
   (; Commonly used shortcuts keys in avy mode
    ("C-;" . avy-goto-char-timer)         ;Goto a char
