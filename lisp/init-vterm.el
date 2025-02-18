@@ -46,7 +46,7 @@
 
 ;; 快速打开/切换 vterm 的快捷键
 (global-set-key (kbd "C-c t") 'vterm)           ; 打开 vterm
-(global-set-key (kbd "C-x T") 'vterm-other-window) ; 在其他窗口打开
+(global-set-key (kbd "C-c T") 'vterm-other-window) ; 在其他窗口打开
 
 (provide 'init-vterm)
 ;;; init-vterm.el ends here

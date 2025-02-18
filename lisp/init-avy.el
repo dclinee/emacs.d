@@ -5,6 +5,7 @@
 (use-package avy
   :ensure t
   :defer t
+  :commands (avy--generic-jump)
   :bind
   (; Commonly used shortcuts keys in avy mode
    ("C-;" . avy-goto-char-timer)         ;Goto a char
@@ -21,17 +22,14 @@
    ("C-c C-j" . avy-resume))             ;Last avy command
   :config
   ;; Basic configuration
-  (setq avy-background t)
-  ;; Actions of avy
-  )
-
-;;;Jumping to conditionals in Elisp
-(defun avy-goto-conditional ()
-  "Jump to conditional keywords like,'if', 'cond', 'when', 'unless'
+  ;;;Jumping to conditionals in Elisp
+  (defun avy-goto-conditional ()
+    "Jump to conditional keywords like,if, cond, when, unless
 in the text."
-  (interactive)
-  (avy--generic-jump "\\s(\\(if\\|cond\\|when\\|unless\\)\\b" nil 0))
-(global-set-key (kbd "M-g c") 'avy-goto-conditional)
+    (interactive)
+    (avy--generic-jump "\\s(\\(if\\|cond\\|when\\|unless\\)\\b" nil 0))
+  (global-set-key (kbd "M-g c") 'avy-goto-conditional)
+  )
 
 (provide 'init-avy)
 ;;; init-avy.el ends here
