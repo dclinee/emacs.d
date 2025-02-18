@@ -7,6 +7,7 @@
 ;; `helpful-callable' as a drop-in replacement.
 (use-package helpful
   :ensure t
+  :after t
   :defer t
   :bind (("C-h f" . helpful-callable)
          ("C-h F" . helpful-function)
@@ -16,13 +17,10 @@
          ;; Lookup the current symbol at point. C-c C-d is a common keybinding
          ;; for this in lisp modes.
          ("C-c C-d" . helpful-at-point))
+  :config
+  (setq counsel-describe-function-function #'helpful-callable)
+  (setq counsel-describe-variable-function #'helpful-variable)
   )
-
-;; Look up *F*unctions (excludes macros).
-;; By default, C-h F is bound to `Info-goto-emacs-command-node'. Helpful
-;; already links to the manual, if a function is referenced there.
-(setq counsel-describe-function-function #'helpful-callable)
-(setq counsel-describe-variable-function #'helpful-variable)
 
 (provide 'init-helpful)
 ;;; init-helpful.el ends here

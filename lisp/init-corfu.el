@@ -15,7 +15,7 @@
 (setq completion-cycle-threshold 4)
 
 (when (maybe-require-package 'corfu)
-  (setq-default corfu-auto t)
+  (setq-default corfu-auto nil)
   (with-eval-after-load 'eshell
     (add-hook 'eshell-mode-hook (lambda () (setq-local corfu-auto nil))))
   (setq-default corfu-quit-no-match 'separator)
@@ -24,6 +24,7 @@
   (when (featurep 'corfu-popupinfo)
     (with-eval-after-load 'corfu
       (corfu-popupinfo-mode)))
+
 
   ;; TODO: https://github.com/jdtsmith/kind-icon
   )
