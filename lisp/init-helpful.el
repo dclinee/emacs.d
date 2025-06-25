@@ -7,7 +7,6 @@
 ;; `helpful-callable' as a drop-in replacement.
 (use-package helpful
   :ensure t
-  :after t
   :defer t
   :bind (("C-h f" . helpful-callable)
          ("C-h F" . helpful-function)
