@@ -17,6 +17,7 @@
          ;; for this in lisp modes.
          ("C-c C-d" . helpful-at-point))
   :config
+  (setq helpful-max-buffers 5)
   (setq counsel-describe-function-function #'helpful-callable)
   (setq counsel-describe-variable-function #'helpful-variable)
   )
