@@ -15,7 +15,7 @@
 
 ;;; Standard package repositories
 (setq package-archives
-      '(("melpa" . "https://mirrosrs.tuna.tsinghua.edu.cn/elpa/melpa/")
+      '(("melpa" . "https://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/")
         ("gnu" . "https://mirrors.tuna.tsinghua.edu.cn/elpa/gnu/")
         ))
 
