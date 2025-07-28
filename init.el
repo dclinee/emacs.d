@@ -150,10 +150,11 @@
 (require 'init-direnv)
 (require 'init-avy)
 (require 'init-helpful)
-(require 'init-helm)
+;;(require 'init-helm)
 (require 'init-tabnine)
 (require 'init-vterm)
 (require 'init-icons)
+(require 'init-vertico)
 
 ;; Allow access from emacsclient
 (add-hook 'after-init-hook

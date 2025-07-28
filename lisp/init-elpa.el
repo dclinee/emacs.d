@@ -15,12 +15,12 @@
 
 ;;; Standard package repositories
 (setq package-archives
-      '(("melpa" . "https://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/")
-        ("gnu" . "https://mirrors.tuna.tsing.edu.cn/elpa/gnu/")
-        ("nongnu" . "https://mirrors.tuna.tsing.edu.cn/elpa/nongnu/")))
+      '(("melpa" . "https://mirrosrs.tuna.tsinghua.edu.cn/elpa/melpa/")
+        ("gnu" . "https://mirrors.tuna.tsinghua.edu.cn/elpa/gnu/")
+        ))
 
 
-;; Work-around for https://debbugs.gnu.org/cgi/bugreport.cgi?bug=34341
+;; Work-around for https://debbugs.gnu.org/cgi/bugreport.cgi?bug=34340
 (when (and (version< emacs-version "26.3") (boundp 'libgnutls-version) (>= libgnutls-version 30604))
   (setq gnutls-algorithm-priority "NORMAL:-VERS-TLS1.3"))
 

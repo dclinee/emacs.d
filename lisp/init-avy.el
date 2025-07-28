@@ -25,7 +25,7 @@
   ;; Basic configuration
   ;; Set avy-keys to a list containing all upper and lower case letters.
   (setq avy-keys (nconc (number-sequence ?a ?z)
-                        (number-sequence ?A ?Z)))
+                        ))
   ;;--------------------------------------------------------------------
   ;;Jumping to conditionals in Elisp
   (defun avy-goto-conditional ()

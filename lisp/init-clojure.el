@@ -6,7 +6,7 @@
 
 (when (maybe-require-package 'clojure-mode)
   (require-package 'cljsbuild-mode)
-  (require-package 'elein)
+  ;;  (require-package 'elein)
 
   (with-eval-after-load 'clojure-mode
     (add-hook 'clojure-mode-hook 'sanityinc/lisp-setup)
