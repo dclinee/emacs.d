@@ -33,7 +33,6 @@
 
 ;; Bootstrap config
 
-
 (setq custom-file (locate-user-emacs-file "custom.el"))
 (require 'init-utils)
 (require 'init-site-lisp) ;; Must come before elpa, as it may provide package.el
@@ -150,11 +149,11 @@
 (require 'init-direnv)
 (require 'init-avy)
 (require 'init-helpful)
-;;(require 'init-helm)
+(require 'init-helm)
 (require 'init-tabnine)
 (require 'init-vterm)
 (require 'init-icons)
-(require 'init-vertico)
+
 
 ;; Allow access from emacsclient
 (add-hook 'after-init-hook

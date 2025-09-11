@@ -53,6 +53,15 @@
       (not (display-graphic-p)))
     (add-to-list 'dimmer-exclusion-predicates 'sanityinc/display-non-graphic-p)))
 
+;; Doom-themes and doom-modeline
+
+(use-package doom-themes
+  :ensure t
+  :config
+  (load-theme 'doom-dark+ t))
+(use-package doom-modeline
+  :ensure t
+  :init (doom-modeline-mode 1))
 
 (provide 'init-themes)
 ;;; init-themes.el ends here
