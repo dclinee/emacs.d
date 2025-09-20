@@ -48,6 +48,9 @@
 (use-package helm-projectile
   :ensure t
   :after (helm projectile))
+;;; Helm-configuration
+(use-package helm-rg
+  :ensure t)
 
 (provide 'init-helm)
 ;;; init-helm.el ends here
